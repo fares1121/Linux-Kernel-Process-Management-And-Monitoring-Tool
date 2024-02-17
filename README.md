@@ -1,15 +1,15 @@
 # Linux-Kernel-Process-Management-And-Monitoring-Tool
 
 
-  # 1. Task Monitor 
+# 1. Task Monitor 
 
-    # Introduction: 
-      The Task Monitor Kernel Module is developed to enable monitoring of process state information in a Linux environment. It allows users to write process identifiers to a ‘/proc/pid’ file and retrieve information about the associated tasks, such as the command being executed, the process identifier, and the current state. 
+  # Introduction: 
+  The Task Monitor Kernel Module is developed to enable monitoring of process state information in a Linux environment. It allows users to write process identifiers to a ‘/proc/pid’ file and retrieve information about the associated tasks, such as the command being executed, the process identifier, and the current state. 
 
-    # Design Choices: 
-      - File System Integration: Utilize the ‘/proc’ file system to create a virtual file (‘/proc/pid’) for interacting with the kernel module.
-      - Memory Management: Implement proper memory allocation and deallocation using kmalloc() and kfree() to prevent memory leaks.
-      - Kernel Functions: Utilize kernel functions such as pid_task() and find_vpid() to retrieve task information from process identifiers.
+  # Design Choices: 
+    - File System Integration: Utilize the ‘/proc’ file system to create a virtual file (‘/proc/pid’) for interacting with the kernel module.
+    - Memory Management: Implement proper memory allocation and deallocation using kmalloc() and kfree() to prevent memory leaks.
+    - Kernel Functions: Utilize kernel functions such as pid_task() and find_vpid() to retrieve task information from process identifiers.
     
     # Functionality: 
       - Writing to ‘/proc/pid’: Users can write process identifiers to the ‘/proc/pid’ file to initiate monitoring of specific tasks.
