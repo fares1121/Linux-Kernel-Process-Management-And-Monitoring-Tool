@@ -1,7 +1,7 @@
 # Linux-Kernel-Process-Management-And-Monitoring-Tool
 
 
-# Task Monitor 
+# 1. Task Monitor 
 
 # Introduction: 
 The Task Monitor Kernel Module is developed to enable monitoring of process state information in a Linux environment. It allows users to write process identifiers to a ‘/proc/pid’ file and retrieve information about the associated tasks, such as the command being executed, the process identifier, and the current state. 
@@ -25,7 +25,7 @@ The Task Monitor Kernel Module is developed to enable monitoring of process stat
 The Task Monitor Kernel Module provides a robust mechanism for monitoring process state information in the Linux kernel. By leveraging the ‘/proc’ file system and kernel functions, it offers users the ability to retrieve valuable insights into the execution status of specific tasks, enhancing system monitoring and management capabilities. 
 
 
-# Process Launcher 
+# 2. Process Launcher 
 
 # Introduction: 
 The Process Launcher Tool is designed to facilitate the launching of multiple processes in a Linux environment. It allows users to specify executable paths and command-line arguments for each process and monitors the state of the launched processes using the Task Monitor kernel module. 
