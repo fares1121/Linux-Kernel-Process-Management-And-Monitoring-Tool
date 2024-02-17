@@ -35,16 +35,16 @@
   - Process Launching Mechanism: Use the fork() and execv() system calls to create child processes and execute specified programs, respectively.
   - Integration with Task Monitor Kernel Module: Write the PID of each forked process to the ‘/proc/pid’ file created by the Task Monitor kernel module for monitoring process state.
     
-    # Functionality: 
-      - Launching Multiple Processes: Users can specify the number of processes to launch, with a maximum limit of 100.
-      - Customizable Executable Paths and Arguments: Users can input executable paths and command-line arguments for each process.
-      - Monitoring Process State: The tool integrates with the Task Monitor kernel module to monitor the state of each forked process, providing insights into              their execution status.
+  # Functionality: 
+  - Launching Multiple Processes: Users can specify the number of processes to launch, with a maximum limit of 100.
+  - Customizable Executable Paths and Arguments: Users can input executable paths and command-line arguments for each process.
+  - Monitoring Process State: The tool integrates with the Task Monitor kernel module to monitor the state of each forked process, providing insights into their execution status.
     
-    # Usage Instructions: 
-      - Compilation: Compile the program using the C compiler GCC, by running the command ‘gcc launcher.c -o launcher’. 
-      - Execution: Execute the compiled program by running ‘. /launcher’ in the terminal.
-      - Input: Follow the prompts to enter the number of processes to launch, executable paths, and command-line arguments for each process.
-      - Monitoring: After launching the processes, observe the process state information displayed by the Task Monitor kernel module in the ‘/proc/pid’.
+  # Usage Instructions: 
+  - Compilation: Compile the program using the C compiler GCC, by running the command ‘gcc launcher.c -o launcher’. 
+  - Execution: Execute the compiled program by running ‘. /launcher’ in the terminal.
+  - Input: Follow the prompts to enter the number of processes to launch, executable paths, and command-line arguments for each process.
+  - Monitoring: After launching the processes, observe the process state information displayed by the Task Monitor kernel module in the ‘/proc/pid’.
 
-    # Conclusion: 
-    The Process Launcher Tool provides a user-friendly interface for launching and monitoring multiple processes in a Linux environment. By leveraging system calls     and kernel modules, it offers flexibility and efficiency in managing process execution.
+  # Conclusion: 
+  The Process Launcher Tool provides a user-friendly interface for launching and monitoring multiple processes in a Linux environment. By leveraging system calls and kernel modules, it offers flexibility and efficiency in managing process execution.
